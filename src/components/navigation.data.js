@@ -12,11 +12,11 @@ export default [
     label: 'Momentos',
   },
   {
-    path: '/contacto/',
-    label: 'Contacto',
-  },
-  {
     path: '/videos/',
     label: 'Videos',
+  },
+  {
+    path: '/contacto/',
+    label: 'Contacto',
   },
 ]
