@@ -1,26 +1,33 @@
 .navigationbar {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .container {
+  top: 0;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   /* max-width: var(--size-max-width); */
   align-items: center;
   margin: 0 auto;
   padding: var(--space-2xl) var(--size-gutter);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  /*   position: -webkit-sticky;
+  position: sticky; */
+
   background-color: white;
-  /*  background: var(--verde-claro-efata); */
-  height: 50px;
+  height: 65px;
   z-index: 1000;
 }
 
 .mobileNavButton {
   display: none;
+}
+
+.redesicon {
+  width: 35px;
+  height: 35px;
 }
 
 .mobileNavButtonLines {
@@ -66,8 +73,8 @@
 }
 
 .icon {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
 }
 
 .logo {
@@ -81,9 +88,41 @@
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .logoLink {
+    width: 35px;
+    height: 35px;
+  }
+  .logoLink > span:last-child {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .navigationItem {
+    margin-bottom: 10px;
+    font-size: var(--text-xs);
+  }
+  .redesicon {
+    width: 25px;
+    height: 25px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 @media (max-width: 767px) {
   .logoLink {
-    display: none;
+    width: 25px;
+    height: 25px;
   }
   .logoLink > span:last-child {
     border: 0;
@@ -117,15 +156,12 @@
   .navigationItem {
     margin-bottom: 10px;
   }
-
+  .redesicon {
+    width: 35px;
+    height: 35px;
+  }
   .icon {
     width: 35px;
     height: 35px;
   }
 }
-
-/* @media (max-width: 400px) {
-  .menuLinks {
-    display: none;
-  }
-} */

@@ -1,6 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import useLatestBlogPost from '../hooks/use-latest-blog-post'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import * as styles from './services.module.css'

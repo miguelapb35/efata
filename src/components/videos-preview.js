@@ -3,12 +3,12 @@ import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image' */
 import Video from './video'
 import Container from './container'
-import * as styles from './article-preview.module.css'
+import * as styles from './videos-preview.module.css'
 
 const VideosPreview = ({ videos }) => {
   if (!videos) return null
   if (!Array.isArray(videos)) return null
-  console.log(videos)
+  // console.log(videos)
   return (
     <Container>
       <ul className={styles.articleList}>

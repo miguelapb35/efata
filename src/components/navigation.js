@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import Efata from '../images/logos/logo-efata.png'
 import menuItems from './navigation.data'
 import WhatsappCall from '../components/whatsappCall'
+import Instagram from '../images/logos/instagram.png'
+import Facebook from '../images/logos/facebook.png'
 import * as styles from './navigation.module.css'
 
 const Navigation = () => {
@@ -31,6 +33,31 @@ const Navigation = () => {
                 <Link to={menuItem.path}>{menuItem.label}</Link>
               </li>
             ))}
+
+            <li className={styles.navigationItem}>
+              <a
+                href="https://www.facebook.com/profile.php?id=100084731586274"
+                target="_blank"
+              >
+                <img
+                  src={Facebook}
+                  alt="Facebook"
+                  className={styles.redesicon}
+                />
+              </a>
+            </li>
+            <li className={styles.navigationItem}>
+              <a href="https://www.instagram.com/domusefata/" target="_blank">
+                <img
+                  src={Instagram}
+                  alt="Instagram"
+                  className={styles.redesicon}
+                />
+              </a>
+            </li>
+            <li className={styles.navigationItem}>
+              <p>domusefata@gmail.com</p>
+            </li>
             <li className={styles.navigationItem}>
               <WhatsappCall />
             </li>
@@ -48,8 +75,33 @@ const Navigation = () => {
                 </Link>
               </li>
             ))}
+
             <li className={styles.navigationItem}>
-              <WhatsappCall className={styles.icon} />
+              <a
+                href="https://www.facebook.com/profile.php?id=100084731586274"
+                target="_blank"
+              >
+                <img
+                  src={Facebook}
+                  alt="Facebook"
+                  className={styles.redesicon}
+                />
+              </a>
+            </li>
+            <li className={styles.navigationItem}>
+              <a href="https://www.instagram.com/domusefata/" target="_blank">
+                <img
+                  src={Instagram}
+                  alt="Instagram"
+                  className={styles.redesicon}
+                />
+              </a>
+            </li>
+            <li className={styles.navigationItem}>
+              <p>domusefata@gmail.com</p>
+            </li>
+            <li className={styles.navigationItem}>
+              <WhatsappCall className={styles.redesicon} />
             </li>
           </ul>
         </div>

@@ -1,6 +1,4 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-
 import { StaticImage } from 'gatsby-plugin-image'
 import * as styles from './gallery.module.css'
 
