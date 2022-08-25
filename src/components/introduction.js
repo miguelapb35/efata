@@ -4,7 +4,6 @@ import Container from './container'
 import * as styles from './introduction.module.css'
 import useVidSilvania from '../hooks/use-vid-silvania'
 import useTextoIntroduccion from '../hooks/use-text-introduccion'
-import localPoster from '../images/background/bg.jpg'
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
   <div
@@ -65,7 +64,6 @@ const Introduction = () => {
               videoSrcURL={vidUrl}
               // videoSrcURL="https://player.vimeo.com/video/727443407?h=da1eaa58fe&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               videoTitle="Efata Sede Silvania"
-              poster="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvenngage-wordpress-gallery.s3.amazonaws.com%2Fuploads%2F2018%2F10%2FClassic-Tweak-Halloween-Event-Poster-Example2.jpg&f=1&nofb=1"
             />
           </div>
         </div>
