@@ -8,6 +8,7 @@ import ArticlePreview from '../components/article-preview'
 import Introduction from '../components/introduction'
 import Gallery from '../components/gallery'
 import LatestPosts from '../components/services'
+import LatestNoticias from '../components/noticias'
 
 class RootIndex extends React.Component {
   render() {
@@ -27,6 +28,10 @@ class RootIndex extends React.Component {
           introduction="Estos son algunos de los servicios que ofrecemos"
         />
         <ArticlePreview posts={posts} />
+        <LatestNoticias
+          title="Noticias Efata"
+          introduction="Actualidades Efata"
+        />
         <Gallery />
       </Layout>
     )
